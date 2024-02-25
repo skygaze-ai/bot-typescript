@@ -25,6 +25,6 @@ async function main() {
 const scheduleExpressionMinute = "* * * * *"; // Run once every minute for testing
 const scheduleExpression = "0 */3 * * *"; // Run once every three hours in prod
 
-const job = new CronJob(scheduleExpression, main); // change to scheduleExpressionMinute for testing
+const job = new CronJob(scheduleExpressionMinute, main); // change to scheduleExpressionMinute for testing
 
 job.start();
